@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coast2888's Domain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="moon-bg"></div>
+    <div class="star star1"></div>
+    <div class="star star2"></div>
+    <div class="star star3"></div>
+    <header>
+        <section id="home">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                        <a href="#free">Moon Rangers</a>
+                        <a href="#newsletter">About Us</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <a href="#">Web Development</a>
+                                <a href="#">Graphic Design</a>
+                                <a href="#">Digital Marketing</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <div class="domain">
+        <div class="headline1" id="headline1">Coast's Domain</div>
+        <div class="headline headline2" id="headline2">Where Dreams Come To Die</div>
+    </div><br>
+    <div class="dungeon">
+        <button class="animated-button" onclick="slideInPanel()">Don't Click Me!</button>
+    </div>
+
+    <div id="panel" class="hidden">
+        <button class="close-button" onclick="closePanel()">X</button>
+        <img src="images/boing.png" alt="Degen Dungeon">
+        <h3>Welcome to my Degen Dungeon!</h3>
+        <p>Beware of the crazy experiments!</p>
+    </div>
+
+    <section id="free">
+        <div class="directions">
+            <div class="map-title">
+                <h2>Directions</h2>
+                <div class="map-container">
+                    <img src="images/watchers2.jpg" alt="Navigation Menu" usemap="#menuMap" style="width: 400px; height: 300px;">
+                    <map name="menuMap">
+                        <area shape="rect" coords="0,0,200,150" href="#home" alt="Home" onmouseover="showReference('home')" onmouseout="hideReference('home')">
+                        <area shape="rect" coords="200,0,400,150" href="#free" alt="About Us" onmouseover="showReference('free')" onmouseout="hideReference('free')">
+                        <area shape="rect" coords="0,150,200,300" href="#testing" alt="Social Media" onmouseover="showReference('testing')" onmouseout="hideReference('testing')">
+                        <area shape="rect" coords="200,150,400,300" href="#newsletter" alt="Newsletter" onmouseover="showReference('newsletter')" onmouseout="hideReference('newsletter')">
+                    </map>
+                    <div class="hover-reference hover-home" id="ref-home">Home</div>
+                    <div class="hover-reference hover-free" id="ref-free">About</div>
+                    <div class="hover-reference hover-testing" id="ref-testing">Social Media</div>
+                    <div class="hover-reference hover-newsletter" id="ref-newsletter">Newsletter</div>
+                </div>
+            </div>
+
+            <div id="testing">
+                <figure>
+                    <img src="images/MoonRangersLogo.png" alt="MoonRangersLogo" class="autoRotate">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3>This</h3>
+        <p>is about all stuff.</p>
+        <button class="animated-button" onclick="toggleDiv('div1')">Audio</button>
+        <div class="av">
+            <div>
+                <video id="videoPlayer" src="video/pav-25074F99-7932-4B7F-B976-686134F5E55E.mp4" controls width="320" height="240"></video>
+                <div>
+                    <button class="animated-button" onclick="document.getElementById('videoPlayer').play()">Play Video</button>
+                    <button class="animated-button" onclick="document.getElementById('videoPlayer').pause()">Pause Video</button>
+                </div>
+            </div>
+            <div class="audio-container">
+                <div id="div1" class="hidden-div">
+                    <audio id="audioPlayer" src="audio/Test 1-1.m4a" controls></audio>
+                    <div>
+                        <button class="animated-button" onclick="document.getElementById('audioPlayer').play()">Play Audio</button>
+                        <button class="animated-button" onclick="document.getElementById('audioPlayer').pause()">Pause Audio</button>
+                    </div>
+                </div>
+            </div>
+            <div class="barrel-container">
+                <div class="barrel" id="barrel">
+                    <div class="barrel-face" id="face1"></div>
+                    <div class="barrel-face" id="face2"></div>
+                    <div class="barrel-face" id="face3"></div>
+                    <div class="barrel-face" id="face4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h3>Discord and Security 101</h3>
+        <button class="animated-button" onclick="toggleDiv('div2')">Sign Up for my Newsletter</button>
+        <div id="div2" class="hidden-div">
+            <div class="container2">
+                <div class="form">
+                    <form action="/submit" method="post">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="18" max="200" placeholder="18">
+                    </form>
+                    <form action="/submit" method="post">
+                        <label for="dateOfBirth">Date of Birth:</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth">
+
+                        <label for="homepage">Homepage:</label>
+                        <input type="url" id="homepage" name="homepage" placeholder="https://example.com">
+                    </form>
+                    <input type="submit" value="Submit" class="animated-button">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <img class="floating-fox" alt="Moon Ranger Logo" src="images/MoonRangersLogo.png" width="100" height="100">
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SalesBoost365. All rights reserved.</p>
+            <nav>
+                <button class="footer-button"><a href="https://www.salesboost365.com/privacy">Privacy Policy</a></button>
+                <button class="footer-button"><a href="https://www.salesboost365.com/terms">Terms of Service</a></button>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
