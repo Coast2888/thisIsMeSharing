@@ -547,7 +547,7 @@ nav ul li a:hover {
     transform: translateY(2px);
 }
 
-free {
+#free {
     text-align: center;
     max-height: 1200px;
 }
