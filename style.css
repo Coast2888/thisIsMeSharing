@@ -180,6 +180,28 @@ nav ul li a:hover {
     background-color: rgb(17, 16, 16);
 }
 
+.media-button {
+    background-color: rgb(17, 16, 16);
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.media-button:hover {
+    transform: scale(1.04);
+    border-radius: 10px;
+    border: 1px, solid #1E90ff;
+    background-color: rgb(17, 16, 16);
+}
+
 .domain {
     max-height: 90%;
     max-width: 90%;
@@ -242,7 +264,7 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.directions {
+#directions {
     padding-top: 5%;
     display: flex;
     align-items: center;
@@ -293,24 +315,24 @@ nav ul li a:hover {
     border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
 }
 
-.hover-free {
+.hover-directions {
     top: 20px;
     right: 20px;
 }
 
-.hover-free:after {
+.hover-directions:after {
     right: 50%;
     bottom: 100%;
     border-width: 10px 10px 0;
     border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
 }
 
-.hover-testing {
+.hover-about {
     bottom: 20px;
     left: 20px;
 }
 
-.hover-testing:after {
+.hover-about:after {
     left: 50%;
     top: 100%;
     border-width: 0 10px 10px;
@@ -547,11 +569,6 @@ nav ul li a:hover {
     transform: translateY(2px);
 }
 
-#free {
-    text-align: center;
-    max-height: 1200px;
-}
-
 footer {
     background: opaque;
     color: white;
@@ -561,7 +578,7 @@ footer {
 }
 
 .footer-button {
-    background-color: white;
+    background-color: #1E90ff;
     border: 1px solid white;
     color: white;
     padding: 10px;

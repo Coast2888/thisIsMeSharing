@@ -19,12 +19,12 @@
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
-                        <a href="#free">Moon Rangers</a>
-                        <a href="#newsletter">About Us</a>
+                        <a href="#directions">Directions</a>
+                        <a href="#newsletter">About Stuff</a>
                         <div class="dropdown">
                             <button class="dropbtn">Services</button>
                             <div class="dropdown-content">
-                                <a href="#">Web Development</a>
+                                <a href="#">Discord Assistance</a>
                                 <a href="#">Graphic Design</a>
                                 <a href="#">Digital Marketing</a>
                             </div>
@@ -49,30 +49,28 @@
         <p>Beware of the crazy experiments!</p>
     </div>
 
-    <section id="free">
-        <div class="directions">
-            <div class="map-title">
-                <h2>Directions</h2>
-                <div class="map-container">
-                    <img src="images/watchers2.jpg" alt="Navigation Menu" usemap="#menuMap" style="width: 400px; height: 300px;">
-                    <map name="menuMap">
-                        <area shape="rect" coords="0,0,200,150" href="#home" alt="Home" onmouseover="showReference('home')" onmouseout="hideReference('home')">
-                        <area shape="rect" coords="200,0,400,150" href="#free" alt="About Us" onmouseover="showReference('free')" onmouseout="hideReference('free')">
-                        <area shape="rect" coords="0,150,200,300" href="#testing" alt="Social Media" onmouseover="showReference('testing')" onmouseout="hideReference('testing')">
-                        <area shape="rect" coords="200,150,400,300" href="#newsletter" alt="Newsletter" onmouseover="showReference('newsletter')" onmouseout="hideReference('newsletter')">
-                    </map>
-                    <div class="hover-reference hover-home" id="ref-home">Home</div>
-                    <div class="hover-reference hover-free" id="ref-free">About</div>
-                    <div class="hover-reference hover-testing" id="ref-testing">Social Media</div>
-                    <div class="hover-reference hover-newsletter" id="ref-newsletter">Newsletter</div>
-                </div>
+    <section id="directions">
+        <div class="map-title">
+            <h2>Directions</h2>
+            <div class="map-container">
+                <img src="images/watchers2.jpg" alt="Navigation Menu" usemap="#menuMap" style="width: 400px; height: 300px;">
+                <map name="menuMap">
+                    <area shape="rect" coords="0,0,200,150" href="#home" alt="Home" onmouseover="showReference('home')" onmouseout="hideReference('home')">
+                    <area shape="rect" coords="200,0,400,150" href="#directions" alt="Directions" onmouseover="showReference('directions')" onmouseout="hideReference('directions')">
+                    <area shape="rect" coords="0,150,200,300" href="#about" alt="About" onmouseover="showReference('about')" onmouseout="hideReference('about')">
+                    <area shape="rect" coords="200,150,400,300" href="#newsletter" alt="Newsletter" onmouseover="showReference('newsletter')" onmouseout="hideReference('newsletter')">
+                </map>
+                <div class="hover-reference hover-home" id="ref-home">Home</div>
+                <div class="hover-reference hover-directions" id="ref-directions">Directions</div>
+                <div class="hover-reference hover-about" id="ref-about">About</div>
+                <div class="hover-reference hover-newsletter" id="ref-newsletter">Newsletter</div>
             </div>
+        </div>
 
-            <div id="testing">
-                <figure>
-                    <img src="images/MoonRangersLogo.png" alt="MoonRangersLogo" class="autoRotate">
-                </figure>
-            </div>
+        <div id="testing">
+            <figure>
+                <img src="images/MoonRangersLogo.png" alt="MoonRangersLogo" class="autoRotate">
+            </figure>
         </div>
     </section>
 
@@ -84,16 +82,16 @@
             <div>
                 <video id="videoPlayer" src="video/pav-25074F99-7932-4B7F-B976-686134F5E55E.mp4" controls width="320" height="240"></video>
                 <div>
-                    <button class="animated-button" onclick="document.getElementById('videoPlayer').play()">Play Video</button>
-                    <button class="animated-button" onclick="document.getElementById('videoPlayer').pause()">Pause Video</button>
+                    <button class="media-button" onclick="document.getElementById('videoPlayer').play()">Play Video</button>
+                    <button class="media-button" onclick="document.getElementById('videoPlayer').pause()">Pause Video</button>
                 </div>
             </div>
             <div class="audio-container">
                 <div id="div1" class="hidden-div">
                     <audio id="audioPlayer" src="audio/Test 1-1.m4a" controls></audio>
                     <div>
-                        <button class="animated-button" onclick="document.getElementById('audioPlayer').play()">Play Audio</button>
-                        <button class="animated-button" onclick="document.getElementById('audioPlayer').pause()">Pause Audio</button>
+                        <button class="media-button" onclick="document.getElementById('audioPlayer').play()">Play Audio</button>
+                        <button class="media-button" onclick="document.getElementById('audioPlayer').pause()">Pause Audio</button>
                     </div>
                 </div>
             </div>
@@ -138,10 +136,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 SalesBoost365. All rights reserved.</p>
+            <p>&copy; 2024 Coast2888. All rights reserved.</p>
             <nav>
-                <button class="footer-button"><a href="https://www.salesboost365.com/privacy">Privacy Policy</a></button>
-                <button class="footer-button"><a href="https://www.salesboost365.com/terms">Terms of Service</a></button>
+                <button class="footer-button"><a href="#home">Home</a></button>
             </nav>
         </div>
     </footer>
