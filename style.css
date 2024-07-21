@@ -64,7 +64,6 @@ body {
 header {
     display: flex table-column;
     align-items: center;
-    justify-content: space-between;
     padding: 10px 20px;
     height: 60px;
     text-align: center;
@@ -90,12 +89,12 @@ nav ul li :hover {
 }
 
 nav ul li a {
-    padding-right: 10px;
     text-decoration: none;
     color: white;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 1px;
+    margin-right: 1em;
 }
 
 nav ul li a:hover {
@@ -452,8 +451,7 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-.audio-div,
-.form-div {
+.audio-div {
     padding: 10px 0;
 }
 
@@ -510,6 +508,17 @@ nav ul li a:hover {
     to {
         transform: rotateY(360deg);
     }
+}
+
+#socialMedia {
+    text-align: center;
+    padding: 2em;
+    width: min(1200px, 90vw);
+    margin: auto;
+}
+
+#socialMedia a {
+    color: white;
 }
 
 #newsletter {
@@ -577,26 +586,8 @@ footer {
     margin-top: 50px;
 }
 
-.footer-button {
-    background-color: #1E90ff;
-    border: 1px solid white;
+footer a {
     color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.footer-button:hover {
-    transform: scale(1.04);
-    border-radius: 10px;
-    border: 2px, solid #1E90ff;
-    background-color: white;
 }
 
 @keyframes float {
