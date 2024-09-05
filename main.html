@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coast2888's Domain</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <section id="home">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Stuff</a></li>
+                        <li><a href="#mystats">Stats</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#newsletter">Discord and Security 101</a></li>
+                        <li><a href="#div1">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <div id="domain">
+            <div class="h1" id="headline1">Coast's</div>
+            <div class="h1" id="headline2">Domain</div>
+        </div><br>
+
+        <section id="about">
+            <div>
+                <button class="animated-button" onclick="slideInPanel()">Degen Mode</button>
+                <div id="panel" class="hidden">
+                    <button class="close-button" onclick="closePanel()">X</button>
+                    <img src="images/alienMid.png" alt="Degen Dungeon">
+                    <h2>Welcome to the Degen Dungeon</h2>
+                    <h4>Where we don't take kindly to those who don't take kindly</h4>
+                </div>
+            </div>
+            <h2>From discord security, setup and maintenance to web marketing start to end</h2>
+
+            <section id="features" class="features container">
+                <div class="feature animated">
+                    <h3>Automated Discord Server Security</h3>
+                    <p>Leverage security bots and proper setups to protect your server.</p>
+                </div>
+                <div class="feature animated">
+                    <h3>Procure domains and show the world your custom website</h3>
+                    <p>Responsive websites that monitor your performance with intuitive dashboards and actionable metrics.</p>
+                </div>
+                <div class="feature animated">
+                    <h3>Automated Follow-ups</h3>
+                    <p>Never miss an opportunity with our intelligent follow-up system.</p>
+                </div>
+            </section>
+
+            <div class="av">
+                <div id="assurance">
+                    <h1>Coast2888</h1>
+                    <h3>HAS YOUR BACK</h3>
+                </div>
+                <button class="toggle-button" onclick="toggleDiv('div1')">Audio</button>
+                <div>
+                    <video id="videoPlayer" src="video/scorchy.mp4" controls width="320" height="240"></video>
+                    <div>
+                        <button class="animated-button" onclick="document.getElementById('videoPlayer').play()">Play Video</button>
+                        <button class="animated-button" onclick="document.getElementById('videoPlayer').pause()">Pause Video</button>
+                    </div>
+                </div>
+                <div class="audio-container">
+                    <div id="div1" class="hidden-div">
+                        <audio id="audioPlayer" src="audio/Test 1-1.m4a" controls></audio>
+                        <div>
+                            <button class="animated-button" onclick="document.getElementById('audioPlayer').play()">Play Audio</button>
+                            <button class="animated-button" onclick="document.getElementById('audioPlayer').pause()">Pause Audio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="button"><a href="https://x.com@1stCyborgOnMars.com">Find me on X</a></button>
+                <button class="button"><a href="https://discord.gg/HQ5tgxXr">Find Me on Discord</a></button>
+            </div>
+        </section>
+
+        <div id="statgrid">
+            <section id="mystats" class="container">
+                <div class="servers">
+                    <h3>Discord Servers Hacked Under My Watch</h3>
+                    <div class="hacked">
+                        <h1>0</h1>
+                    </div>
+                </div>
+                <div id="questions" class="container">
+                    <h3>Questions?</h3>
+                    <input type="text" id="question" placeholder="Ask your question here..." />
+                    <button class="button" onclick="getAnswer()">Get an Answer</button>
+                    <div class="answer" id="answer">
+                        <h4>*May Be Wrong*</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials" class="testimonials">
+                <div class="container">
+                    <h2>What Our Clients Say</h2>
+                    <div class="carousel">
+                        <div class="testimonial">
+                            <blockquote>"Coast has revolutionized our sales process. We've seen a 200% increase in conversions!"</blockquote>
+                            <p>- John Doe, CEO of TechCorp</p>
+                        </div>
+                        <div class="testimonial">
+                            <blockquote>"The insights provided by Coast are invaluable. It's like having a bouncer in our discord server!"</blockquote>
+                            <p>- Jane Smith, Founder of GrowthCo</p>
+                        </div>
+                        <div class="testimonial">
+                            <blockquote>"Our team's productivity skyrocketed after implementing Coast's processes. It's a game-changer!"</blockquote>
+                            <p>- Mike Johnson, Founder of StartupX</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="grid">
+            <section id="pricing" class="collapse-section container">
+                <h2>Flexible Discord Pricing Plans</h2>
+                <button class="collapse-trigger">Starter Plan</button>
+                <div class="collapse-content">
+                    <p>Perfect for small teams. Includes basic features and support.</p>
+                    <p>$1M/month</p>
+                </div>
+                <button class="collapse-trigger">Professional Plan</button>
+                <div class="collapse-content">
+                    <p>Ideal for growing businesses. Includes advanced personal and priority support.</p>
+                    <p>$2M/month</p>
+                </div>
+                <button class="collapse-trigger">Enterprise Plan</button>
+                <div class="collapse-content">
+                    <p>Tailored solutions for large organizations. Includes custom integrations and dedicated server manager.</p>
+                    <p>Contact us for pricing</p>
+                </div>
+            </section>
+
+            <section id="newsletter">
+                <h3>Discord and Security 101</h3>
+                <button class="toggle-button" onclick="toggleDiv('div2')">Sign Up for my Newsletter</button>
+                <div id="div2" class="hidden-div">
+                    <div class="container">
+                        <div class="form">
+                            <form action="/submit" method="post">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                                <label for="age">Age:</label>
+                                <input type="number" id="age" name="age" min="18" max="200" placeholder="18">
+                            </form>
+                            <form action="/submit" method="post">
+                                <label for="dateOfBirth">Date of Birth:</label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth">
+
+                                <label for="homepage">Homepage:</label>
+                                <input type="url" id="homepage" name="homepage" placeholder="https://example.com">
+                            </form>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <h4>Copyright © 2024</h4>
+            <div>
+                <button class="button"><a href="#home">Home</a></button>
+                <button class="button"><a href="#div1">Contact</a></button>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
